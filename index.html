@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enhanced File Management System</title>
+  <title>File Management System</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -163,7 +163,7 @@
   </style>
 </head>
 <body>
-  <h1>Enhanced File Management System</h1>
+  <h1>File Management System</h1>
 
   <div class="tabs">
     <div class="tab active" onclick="switchTab('upload')">Upload</div>
@@ -264,7 +264,7 @@
             };
             coverReader.readAsDataURL(fileCover);
           } else {
-            saveFile(fileName, file, base64Content, coverBase64);
+            saveFile(fileName, file, base64Content, null);
           }
         };
         reader.readAsDataURL(file);
